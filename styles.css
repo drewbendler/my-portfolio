@@ -1,91 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <title>Drew Bendler</title>
-  </head>
-  <body id="page-wrap">
-    <header>
-      <h1>Drew Bendler</h1>
-      <p>Designer / Engineer</p>
-      <ul class="nav">
-        <li><a href="#about-me-container">About Me</a></li>
-        <li><a href="#my-projects-container">Projects</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </header>
-    <main id="about-me-container">
-      <div class="about-me-title">
-        <h3>About Me</h3>
-      </div>
-      <div class="about-me-pic"></div>
-      <div class="about-me-bio">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          voluptas eos sequi aspernatur, illum, nobis ipsa iure placeat itaque
-          inventore nesciunt adipisci tenetur rem repellat labore alias quia
-          quos cupiditate!
-        </p>
-      </div>
-      <div class="links">
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/drew-bendler-a8a3131a4/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/drewbendler" target="_blank"> Github</a>
-          </li>
-        </ul>
-      </div>
-    </main>
-    <section id="my-projects-container">
-      <h3>My Projects</h3>
-      <div class="project-grid">
-        <a href="https://drewbendler.github.io" target="_blank">
-          <div class="project1">
-            <p>
-              Responsive Website Design <br />
-              <br />
-              HTML | CSS
-            </p>
-          </div>
-        </a>
+body {
+  margin: 15px;
+}
 
-        <a href="https://drewbendler.github.io/front-end-game" target="_blank">
-          <div class="project2">
-            <p>
-              HangMan Game <br />
-              <br />
-              HTML | CSS | JAVASCRIPT
-            </p>
-          </div>
-        </a>
+header,
+#my-projects-container,
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
-        <a href="">
-          <div class="project3">
-            <p>
-              Data Analysis <br />
-              <br />
-              REACT | MONGODB | NODE
-            </p>
-          </div>
-        </a>
-      </div>
-    </section>
-    <aside id="contact-me">
-      <h3>Contact Me</h3>
-      <p>drewbendler5@gmail.com</p>
-      <p>703-350-6810</p>
-    </aside>
-  </body>
-</html>
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h3,
+p,
+h4,
+ul {
+  font-family: 'Roboto Mono', monospace;
+}
+
+#about-me-container {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 0.75fr 1fr;
+  min-height: 100vh;
+  margin: 20px;
+}
+
+.about-me-title {
+  grid-row: 1;
+  padding-left: 30%;
+}
+
+.about-me-pic {
+  grid-row: 2;
+  background-color: gray;
+  height: 60%;
+  width: 80%;
+  margin: 10px;
+  background-image: url();
+}
+
+.about-me-bio {
+  grid-row: 2;
+  grid-column: 2;
+  padding: 15px;
+  align-items: flex-start;
+}
+
+.links {
+  text-align: center;
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+
+.nav {
+  min-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  display: inline;
+
+  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+  transform: scale(1.2);
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  transform: scale(1.8);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+}
+
+.project1,
+.project2,
+.project3 {
+  grid-template-rows: 1;
+  grid-template-columns: 1;
+  height: 450px;
+  width: 450px;
+  margin: 50px;
+}
+
+.project1 {
+  background-image: url('./images/project1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover {
+  opacity: 0.5;
+}
+
+.project2 {
+  background-image: url('./images/project2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project3 {
+  background-image: url('./images/project3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
