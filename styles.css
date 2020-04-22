@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Drew Bendler</title>
+  </head>
+  <body id="page-wrap">
+    <header>
+      <h1>Drew Bendler</h1>
+      <p>Designer / Engineer</p>
+      <ul class="nav">
+        <li><a href="#about-me-container">About Me</a></li>
+        <li><a href="#my-projects-container">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </header>
+    <main id="about-me-container">
+      <div class="about-me-title">
+        <h3>About Me</h3>
+      </div>
+      <div class="about-me-pic"></div>
+      <div class="about-me-bio">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          voluptas eos sequi aspernatur, illum, nobis ipsa iure placeat itaque
+          inventore nesciunt adipisci tenetur rem repellat labore alias quia
+          quos cupiditate!
+        </p>
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/drew-bendler-a8a3131a4/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/drewbendler" target="_blank"> Github</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <section id="my-projects-container">
+      <h3>My Projects</h3>
+      <div class="project-grid">
+        <a href="https://drewbendler.github.io" target="_blank">
+          <div class="project1">
+            <p>
+              Responsive Website Design <br />
+              <br />
+              HTML | CSS
+            </p>
+          </div>
+        </a>
+
+        <a href="https://drewbendler.github.io/front-end-game" target="_blank">
+          <div class="project2">
+            <p>
+              HangMan Game <br />
+              <br />
+              HTML | CSS | JAVASCRIPT
+            </p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="project3">
+            <p>
+              Data Analysis <br />
+              <br />
+              REACT | MONGODB | NODE
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <aside id="contact-me">
+      <h3>Contact Me</h3>
+      <p>drewbendler5@gmail.com</p>
+      <p>703-350-6810</p>
+    </aside>
+  </body>
+</html>
