@@ -103,7 +103,8 @@ li a {
 
 .project1,
 .project2,
-.project3 {
+.project3,
+.project4 {
   grid-template-rows: 1;
   grid-template-columns: 1;
   height: 450px;
@@ -133,6 +134,13 @@ li a {
 
 .project3 {
   background-image: url('./images/project3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project4 {
+  background-image: url('./images/project4.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
